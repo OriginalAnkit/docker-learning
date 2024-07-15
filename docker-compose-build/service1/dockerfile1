@@ -1,0 +1,12 @@
+ARG BASE_IMAGE
+
+FROM ${BASE_IMAGE}
+
+ARG APP_NAME
+ENV APP_NAME=${APP_NAME}
+ARG ENV
+ENV ENV=${ENV}
+
+COPY . .
+
+CMD ["node", "app1.js"]
