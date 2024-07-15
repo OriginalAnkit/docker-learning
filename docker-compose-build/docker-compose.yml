@@ -8,6 +8,7 @@ services:
         - APP_NAME=service1 
         - ENV=dev
         - BASE_IMAGE=node:16
+    image: node_service:1.1
 
   service2: 
     build:
@@ -17,3 +18,4 @@ services:
         - APP_NAME=service2
         - ENV=dev2
         - BASE_IMAGE=node:20
+    image: node_service:2.1
